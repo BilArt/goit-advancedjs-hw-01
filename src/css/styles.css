@@ -24,6 +24,24 @@
   -webkit-text-size-adjust: 100%;
 }
 
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  src: url('../../assets/fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  src: url('../../assets/fonts/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -48,7 +66,7 @@ body {
 }
 
 .gallery-item {
-  flex-basis: calc((100% - 48px)/3);
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 .gallery-link {
@@ -66,4 +84,67 @@ body {
 
 .gallery-image:hover {
   transform: scale(1.05);
+}
+
+/* Form */
+.feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px;
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+  max-width: 360px;
+  width: 100%;
+}
+
+.feedback-form label:last-child {
+  margin-bottom: 16px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  height: 40px;
+  max-height: 100%;
+  margin-top: 8px;
+}
+
+.feedback-form input:hover {
+  border: 2px solid #000;
+}
+.feedback-form textarea:hover {
+  border: 2px solid #000;
+}
+
+.feedback-form textarea {
+  height: 80px;
+  max-height: 100%;
+}
+
+.feedback-form button {
+  max-width: 100px;
+  width: 100%;
+  margin-top: 8px;
+  padding: 8px 16px 8px 16px;
+  background: #4e75ff;
+  border: none;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.feedback-form button:hover {
+  background: #6c8cff;
 }
